@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(112, 230, 145);
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'boba_milkyregular';
+    src: url('fonts/Boba\ Milky/boba_milky-webfont.woff2') format('woff2'),
+         url('fonts/Boba\ Milky/boba_milky-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.name {
+    position: fixed;
+    z-index: 1;
+
+    color: white;
+    font-family: 'boba_milkyregular';
+    font-size: 15vh;
+
+    margin-top: 47vh;
+    margin-left: 5vw;
+
+    text-shadow: -.25vh 0 rgb(56, 116, 73), 0 .25vh rgb(56, 116, 73), .25vh 0 rgb(56, 116, 73), 0 -.25vh rgb(56, 116, 73);
+    
+}
+
+.Largo {
+    margin-left: 20vw;
+}
+
+.cookie-strips {
+    transform: rotate(10deg);
+    margin-top: -17vh;
+    margin-left: -6vw;
+    
+}
+
+.cookie-strip {
+    height: 10vh;
+    margin-bottom: 5vh;
+}
+
+.slideleft {
+    -webkit-mask-image: "images/cookie_outline.png";
+    mask-image: "images/cookie_outline.png";
+    -webkit-mask-size: 30%;
+    mask-size: 30%;
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x; 
+    animation: 4s linear 0s infinite reverse slide;
+}
+
+.slideright {
+    -webkit-mask-image: "images/cookie_outline.png";
+    mask-image: "images/cookie_outline.png";
+    -webkit-mask-size: 30%;
+    mask-size: 30%;
+    -webkit-mask-repeat: repeat-x;
+    mask-repeat: repeat-x; 
+    animation: 4s linear 0s infinite slide;
+}
+
+@keyframes slide {
+    from{
+        transform:translateX(-25vw);
+    }
+    to {
+        transform:translateX(0vh);
+    }
+}
