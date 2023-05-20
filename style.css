@@ -21,17 +21,17 @@ body {
 
     color: white;
     font-family: 'boba_milkyregular';
-    font-size: 15vh;
+    font-size: 10em;
 
-    margin-top: 47vh;
-    margin-left: 5vw;
+    margin-top: 4em;
+    margin-left: .75em;
 
-    text-shadow: -.25vh 0 rgb(56, 116, 73), 0 .25vh rgb(56, 116, 73), .25vh 0 rgb(56, 116, 73), 0 -.25vh rgb(56, 116, 73);
+    text-shadow: -.022em 0 rgb(56, 116, 73), 0 .022em rgb(56, 116, 73), .022em 0 rgb(56, 116, 73), 0 -.022em rgb(56, 116, 73);
     
 }
 
 .Largo {
-    margin-left: 20vw;
+    margin-left: 2.5em;
 }
 
 .cookie-strips {
@@ -40,8 +40,8 @@ body {
     user-select: none;
 
     transform: rotate(10deg);
-    margin-top: -17vh;
-    margin-left: -6vw;
+    margin-top: -17em;
+    margin-left: -10em;
     
 }
 
@@ -50,8 +50,8 @@ body {
     -moz-user-select: none;
     user-select: none;
     
-    height: 10vh;
-    margin-bottom: 5vh;
+    height: 8em;
+    margin-bottom: 5em;
 }
 
 .slideleft {
@@ -61,7 +61,7 @@ body {
     mask-size: 30%;
     -webkit-mask-repeat: repeat-x;
     mask-repeat: repeat-x; 
-    animation: 4s linear 0s infinite reverse slide;
+    animation: 1s linear 0s infinite reverse slide;
 }
 
 .slideright {
@@ -71,14 +71,14 @@ body {
     mask-size: 30%;
     -webkit-mask-repeat: repeat-x;
     mask-repeat: repeat-x; 
-    animation: 4s linear 0s infinite slide;
+    animation: 1s linear 0s infinite slide;
 }
 
 @keyframes slide {
     from{
-        transform:translateX(-25vw);
+        transform:translateX(-12em);
     }
     to {
-        transform:translateX(0vh);
+        transform:translateX(0em);
     }
 }
