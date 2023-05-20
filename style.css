@@ -55,23 +55,11 @@ body {
 }
 
 .slideleft {
-    -webkit-mask-image: "images/cookie_outline.png";
-    mask-image: "images/cookie_outline.png";
-    -webkit-mask-size: 30%;
-    mask-size: 30%;
-    -webkit-mask-repeat: repeat-x;
-    mask-repeat: repeat-x; 
-    animation: 1s linear 0s infinite reverse slide;
+    animation: 3s linear 0s infinite reverse slide;
 }
 
 .slideright {
-    -webkit-mask-image: "images/cookie_outline.png";
-    mask-image: "images/cookie_outline.png";
-    -webkit-mask-size: 30%;
-    mask-size: 30%;
-    -webkit-mask-repeat: repeat-x;
-    mask-repeat: repeat-x; 
-    animation: 1s linear 0s infinite slide;
+    animation: 3s linear 0s infinite slide;
 }
 
 @keyframes slide {
