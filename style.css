@@ -23,7 +23,7 @@ body {
     font-family: 'boba_milkyregular';
     font-size: 10em;
 
-    margin-top: 4em;
+    margin-top: 3.95em;
     margin-left: .75em;
 
     text-shadow: -.022em 0 rgb(56, 116, 73), 0 .022em rgb(56, 116, 73), .022em 0 rgb(56, 116, 73), 0 -.022em rgb(56, 116, 73);
@@ -31,7 +31,8 @@ body {
 }
 
 .Largo {
-    margin-left: 2.5em;
+    text-align: right;
+    margin-top: -.2em
 }
 
 .cookie-strips {
