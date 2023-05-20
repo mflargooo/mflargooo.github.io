@@ -12,6 +12,10 @@ body {
 }
 
 .name {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
     position: fixed;
     z-index: 1;
 
@@ -31,6 +35,10 @@ body {
 }
 
 .cookie-strips {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
     transform: rotate(10deg);
     margin-top: -17vh;
     margin-left: -6vw;
@@ -38,6 +46,10 @@ body {
 }
 
 .cookie-strip {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    
     height: 10vh;
     margin-bottom: 5vh;
 }
