@@ -167,7 +167,7 @@
 }
 
 .entry-title {
-    font-family: Verdana;
+    font-family: 'boba_milkyregular';
     color: rgb(56, 116, 73);
     display: block;
     margin: auto;
@@ -186,4 +186,23 @@
     display: block;
     margin: auto;
     margin-top: 1em;
+}
+
+.play-button {
+    font-family: 'boba_milkyregular';
+    color: white;
+    background-color: rgb(56, 116, 73);
+
+    font-size: 1.5em;
+    width: 5.5em;
+    height: 2.25em;
+
+    display: block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.play-button:hover {
+    background-color: rgb(41, 93, 72);
 }
