@@ -165,7 +165,7 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    width: 62.5%;
+    width: 52.5%;
 }
 
 .grid > * {
