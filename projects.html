@@ -11,68 +11,98 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   </head>
 
-  <body class = "projects">
-    <div class = "navbar-projects">
-        <div id = "home" class = "redirect">
+  <body class="projects">
+    <div class="navbar-projects">
+        <div id="home" class="redirect">
             Home
         </div>
-        <div id = "projects" class = "redirect selected">
+        <div id="projects" class="redirect selected">
             Projects
         </div>
     </div>
 
-    <div class = "navbar-filler"> </div>
+    <div class="navbar-filler"> </div>
 
-    <div class = "grid">
-        <div class = "grid-entry">
-            <h1 class = "entry-title">
-                Genodice
-            </h1>
-            <!-- <img class = "entry-img" src = "images/cookie_outline.png"> </img> -->
-            <iframe src="games/Genodice_WebGL/index.html" style="border:0px #000000 none;" name="Game name" scrolling="no" frameborder="1" marginheight="px" marginwidth="320px" height="320px" width="480px"></iframe>
-            <p class = "entry-desc">Genodice is rogue-like dice game where the player rolls a die on 
-                an isometric board to eliminate randomly spawned enemies. Clear the board of enemies to advance to
-                the next board. The difference in the player's top facing number
-                and the enemy's number is awared to player as poker chips. Purchase upgrades with them to grow stronger. 
-                Made for the 2022 GMTK Game Jam. Theme: Roll of the Dice.
-            </p>
-            <button class = "play-button" id = "genodice">Play</button>
-        </div>
-        <div class = "grid-entry">
-            <h1 class = "entry-title">
-                The Horrors of Newell-Simon Hall
-            </h1>
-            <!-- <img class = "entry-img" src = "images/cookie_outline.png"> </img> -->
-            <p class = "entry-desc">The Horrors of Newell-Simon Hall is a horror game centered 
-                around the roboceptionist, Marion "Tank" Lefleur, located 
-                in Carnegie Mellon University's Newell-Simon Hall. Navigate the dark Newell-Simon Hall atrium and repair the five power boxes. 
-                Beware of Tank who is roaming around in an attempt to keep the power off.
-            </p>
-            <button class = "play-button" id = "nsh">Play</button>
-        </div>
-        <div class = "grid-entry">
-            <h1 class = "entry-title">
-                Dogwalker
-            </h1>
-            <!-- <img class = "entry-img" src = "images/cookie_outline.png"> </img> -->
-            <iframe src="games/Dogwalker_WebGL/index.html" style="border:0px #000000 none;" name="Game name" scrolling="no" frameborder="1" marginheight="px" marginwidth="320px" height="320px" width="480px"></iframe>
-            <p class = "entry-desc">The roles of dogwalking have been reversed: Your owner is chronically tied to their phone. 
-                You, the dog, are the only thing between your owner and danger! Tug on your leash to pull your hooman away from any and all harm. 
-                But watch where you step too! Made for the 2023 GTMK Game Jam. Theme: Roles Reversed.
-            </p>
-            <button class = "play-button" id = "dogwalker">Play</button>
-        </div>
+    <div class="center">
+        <div class="grid">
+            <div></div>
+            <div class="grid-entry">
+                <h1 class="entry-title">
+                    Dogwalker
+                </h1>
+                <!-- <img class="entry-img" src="images/cookie_outline.png"> </img> -->
+                <div class="center">
+                    <div id="dogwalkerimgs">
 
-        <div class = "grid-entry">
-            <h1 class = "entry-title">
-                (site wip)
-            </h1>
-            <img class = "entry-img" src = ""> </img>
-            <p class = "entry-desc"></p>
+                    </div>
+                    <iframe class="hidden" id="dogwalkergame" src="" style="border:0px #000000;" name="Dogwalker" scrolling="no" height="540px" width="960px"></iframe>
+                </div>
+                <p class="entry-desc">The roles of dogwalking have been reversed: Your owner is chronically tied to their phone. 
+                    You, the dog, are the only thing between your owner and danger! Tug on your leash to pull your hooman away from any and all harm. 
+                    But watch where you step too! Made for the 2023 GTMK Game Jam. Theme: Roles Reversed.
+                </p>
+                <div class="center">
+                    <button class="proj-button" id="playdogwalker">Play</button> 
+                    <button class="proj-button" id="itchdogwalker">itch.io</button>
+                </div>
+            </div>
+
+            <div class="grid-entry">
+                <h1 class="entry-title">
+                    The Horrors of Newell-Simon Hall
+                </h1>
+                <!-- <img class="entry-img" src="images/cookie_outline.png"> </img> -->
+                <div class="center">
+                    <div id="honshimgs">
+
+                    </div>
+                    <iframe class="hidden" id="honshgame" src="" style="border:0px #000000;" name="TheHorrorsOfNSH" scrolling="no" height="540px" width="960px"></iframe>
+                </div>
+                <p class="entry-desc">The Horrors of Newell-Simon Hall is a horror game centered 
+                    around the roboceptionist, Marion "Tank" Lefleur, located 
+                    in Carnegie Mellon University's Newell-Simon Hall. Navigate the dark Newell-Simon Hall atrium and repair the five power boxes. 
+                    Beware of Tank who is roaming around in an attempt to keep the power off.
+                </p>
+                <div class="center">
+                    <button class="proj-button" id="playhonsh">Play</button>
+                    <button class="proj-button" id="itchhonsh">itch.io</button>
+                </div>
+            </div>
+
+            <div class="grid-entry">
+                <h1 class="entry-title">
+                    Genodice
+                </h1>
+                <!-- <img class="entry-img" src="images/cookie_outline.png"> </img> -->
+                <div id="content" class="center">
+                    <div id="genodiceimgs">
+
+                    </div>
+                    <iframe class="hidden" id="genodicegame"src="" style="border:0px #000000;" name="Dogwalker" scrolling="no" height="540px" width="960px"></iframe>
+                </div>
+                <p class="entry-desc">Genodice is rogue-like dice game where the player rolls a die on 
+                    an isometric board to eliminate randomly spawned enemies. Clear the board of enemies to advance to
+                    the next board. The difference in the player's top facing number
+                    and the enemy's number is awared to player as poker chips. Purchase upgrades with them to grow stronger. 
+                    Made for the 2022 GMTK Game Jam. Theme: Roll of the Dice.
+                </p>
+                <div class="center">
+                    <button class="proj-button" id="playgenodice">Play</button> 
+                    <button class="proj-button" id="itchgenodice">itch.io</button>
+                </div>
+            </div>
+
+            <div class="grid-entry">
+                <h1 class="entry-title">
+                    (site wip)
+                </h1>
+                <img class="entry-img" src=""> </img>
+                <p class="entry-desc"></p>
+                </div>
             </div>
         </div>
     </div>
   </body>
   <script src="navbar.js"></script>
-  <script src="projectredirect.js"> </script>
+  <script src="projects.js"> </script>
 </html>
