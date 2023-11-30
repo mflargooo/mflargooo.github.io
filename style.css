@@ -1,11 +1,18 @@
+body, html {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .home {
     background-color: rgb(112, 230, 145);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .projects {
     overflow-x: hidden;
-    scrollbar-width: none;
 }
 
 @font-face {
@@ -67,7 +74,6 @@
 .center {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .hidden {
@@ -105,15 +111,15 @@
     -moz-user-select: none;
     user-select: none;
 
-    position: fixed;
+    position: absolute;
     z-index: 1;
 
     color: white;
     font-family: 'boba_milkyregular';
     font-size: 10em;
 
-    margin-top: 2.4em;
-    margin-left: .75em;
+    margin-top: 32.5vh;
+    margin-left: 6vw;
 
     text-shadow: -.022em 0 rgb(56, 116, 73), 0 .022em rgb(56, 116, 73), .022em 0 rgb(56, 116, 73), 0 -.022em rgb(56, 116, 73);
     
@@ -122,6 +128,38 @@
 .Largo {
     text-align: right;
     margin-top: -.2em
+}
+
+.aboutme {
+    display:inline-block;
+    z-index: 1;
+    margin-top: 70.25em;
+
+    background-color: white;
+    width: 100vw;
+    height: 61em;
+    position: absolute;
+}
+
+.amcontent {
+    display: flex;
+    padding: 7.75%;
+    height: 67.34%;
+
+    font-size: 1.75em;
+    font-family: "Tahoma";
+    color: black;
+}
+
+.amtext-emphasis {
+    /* font-family: "boba_milkyregular"; */
+    text-shadow: -.025em 0 rgb(27, 62, 37), 0 .025em rgb(27, 62, 37), .025em 0 rgb(27, 62, 37), 0 -.025em rgb(27, 62, 37); 
+    color: rgb(56, 116, 73);
+}
+
+.photo {
+    box-shadow: .75em .75em rgb(56, 116, 73);
+    border-radius: .25em;
 }
 
 .cookie-strips {
@@ -133,7 +171,6 @@
     transform: rotate(10deg);
     margin-top: -17em;
     margin-left: -10em;
-    
 }
 
 .cookie-strip {
@@ -166,14 +203,12 @@
     display: grid;
     grid-template-columns: 1fr;
     width: 52.5%;
-}
-
-.grid > * {
-    padding: 2rem;
+    margin-top: 5em;
 }
 
 .grid-entry {
-    padding: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .entry-title {
