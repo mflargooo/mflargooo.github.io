@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5em 5em 0px 5em;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .box .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23.75%;
+}
+
+.container .box .col img{
+    width: 100%;
+    padding-bottom: 20px;
+}
