@@ -15,6 +15,11 @@
   src: url(./assets/fonts/AwfullyDigital.ttf);
 }
 
+@font-face {
+  font-family: Departure;
+  src: url(./assets/fonts/DepartureMono-Regular.otf);
+}
+
 @theme {
   --accent-bg: rgba(170, 255, 59, 0.1);
   --accent-border: rgba(170, 255, 59, 0.5);
@@ -232,17 +237,15 @@ code {
 }
 
 .project {
-  @apply w-full h-full;
+  @apply flex justify-center w-full h-fit;
+  margin-top: 1rem;
   display: flex;
   flex-grow: 1;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-top: 1rem;
 
-  .project-description {
-    font-family: DigitalDisco;
-    text-align: left;
-  }
+  width: 90%;
+
+  font-family: DigitalDisco;
+  text-align: left;
 }
 
 .list {
@@ -265,4 +268,15 @@ code {
 .embedded-video {
   width: 25rem;
   margin: 1rem;
+}
+
+.diagram {
+  @apply flex w-fit h-fit justify-center items-center bg-[var(--code-bg)] py-2 px-4 rounded-xl;
+  
+  pre {
+    font-size: .625rem;
+    line-height: .8rem;
+    font-family: Departure;
+    white-space: pre-wrap;
+  }
 }
